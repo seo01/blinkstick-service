@@ -19,7 +19,9 @@ echo "2. chmod 755 /etc/init.d/blinkstick-service"
 chmod 755 /etc/init.d/blinkstick-service
 echo "3. touch /var/log/blinkstick-service.log && chown pi /var/log/blinkstick-service.log"
 touch /var/log/blinkstick-service.log && chown pi /var/log/blinkstick-service.log
-echo "4. update-rc.d blinkstick-service defaults"
+echo "4. touch /var/run/blinkstick-service.pid && chown pi /var/run/blinkstick-service.pid"
+touch /var/run/blinkstick-service.pid && chown pi /var/run/blinkstick-service.pid
+echo "5. update-rc.d blinkstick-service defaults"
 update-rc.d blinkstick-service defaults
-echo "5. service blinkstick-service start"
+echo "6. service blinkstick-service start"
 service blinkstick-service start

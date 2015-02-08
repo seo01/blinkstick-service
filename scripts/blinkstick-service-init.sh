@@ -8,7 +8,7 @@
 # Description:       A service that runs a blinkstick
 ### END INIT INFO
  
-SCRIPT=<COMMAND>
+SCRIPT="<COMMAND>"
 RUNAS=pi
  
 PIDFILE=/var/run/blinkstick-service.pid
